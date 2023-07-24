@@ -1,8 +1,10 @@
 import sequelize from "./app/config/db.config.js";
 import app from "./app/app.js";
 
-//importamos asociaciones
+//importamos modelos
 import "./app/models/asociaciones.js";
+import "./app/models/bootcamp.model.js";
+import "./app/models/user.model.js";
 
 const main = async () => {
     try {

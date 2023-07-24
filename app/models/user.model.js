@@ -30,6 +30,12 @@ const User = sequelize.define(
         status: {
             type: DataTypes.BOOLEAN,
             defaultValue: true
+        },
+        password: {
+            type: DataTypes.STRING,
+            validate: {
+                len: [8]
+            }
         }
     },
     {
